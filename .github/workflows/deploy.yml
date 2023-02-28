@@ -28,6 +28,8 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
+    container:
+        image: ubuntu:latest
     steps:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
